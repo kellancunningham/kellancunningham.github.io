@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kellan's First Website</title>
+    <script>
+        function addItem() {
+            var newItem = document.createElement("div");
+            newItem.innerHTML = document.getElementById("box").value;
+            document.getElementById("list").appendChild(newItem);
+        }
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center; font-size: 30pt;">
+        <p>Kellan's First<br />Website</p>
+    </div>
+    <div style="font-size: 20pt;">
+        <img style="vertical-align: middle" src="1200px-Roblox_player_icon_black.svg.png" alt="Roblox" height="50" width="50" /> My favorite Roblox
+        games:
+    </div>
+    <div>
+        <ul>
+            <li><a href="https://web.roblox.com/games/4996049426/All-Star-Tower-Defense">All Star Tower Defense</a></li>
+            <li><a href="https://www.roblox.com/games/4855457388/Demonfall-2-5">Demon Fall</a></li>
+            <li><a href="https://web.roblox.com/games/2809202155/Your-Bizarre-Adventure">Your Bizarre Adventure</a></li>
+            <li><a href="https://web.roblox.com/games/1730877806/UPDATE-4-5-Grand-Piece-Online">Grand Peice Online</a></li>
+            <li><a href="https://web.roblox.com/games/4042427666/DUNGEONS-Anime-Fighting-Simulator">Anime Fighting Simulator</a></li>
+        </ul>
+    </div>
+    <br /><br /><br />
+    <div style="font-size: 20pt;">
+        <img style="vertical-align: middle" src="scratch.png" alt="scratch" height="50" width="50" /> My scratch projects:
+    </div>
+    <div>
+        <ul>
+            <li><a href="https://scratch.mit.edu/projects/369091067/">Ocean Ice</a></li>
+            <li><a href="https://scratch.mit.edu/projects/389394086/">Soil Project</a></li>
+            <li><a href="https://scratch.mit.edu/projects/372052821/">Music Rocks</a></li>
+            <li><a href="https://scratch.mit.edu/projects/405430603/">Space Ripper</a></li>
+            <li><a href="https://scratch.mit.edu/projects/383567869/">COVID-19: How it spreads</a></li>
+
+        </ul>
+    </div>
+    <br /><br /><br />
+    <div style="font-size: 20pt;">
+        <p>My To-Do List:</p>
+        <input type="text" id="box" vlaue="Type here to add task" />
+        <input type="button" value="Add Item" onclick="addItem();" />
+        <br />
+        <br />
+        <div id="list"></div>
+    </div>
+</body>
+
+</html>
